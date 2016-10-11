@@ -12,48 +12,59 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/linearLayoutMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/linearLayoutMain"
-        android:layout_marginStart="8dp">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:id="@+id/editTextCity"
-            android:hint="City (i.e., Charlotte)"/>
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
 
         <EditText
+            android:id="@+id/editTextCity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10sp"
+            android:hint="@string/hintCityString"
+            android:padding="10sp" />
+
+        <EditText
             android:id="@+id/editTextState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15sp"
-            android:hint="State (i.e., NC)"/>
+            android:hint="@string/hintStateString"
+            android:padding="10sp" />
+
         <Button
+            android:id="@+id/buttonSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Submit"
             android:layout_marginTop="15sp"
-            android:id="@+id/buttonSubmit"/>
+            android:text="@string/submitString" />
+
+        <TextView
+            android:id="@+id/textViewNoItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/emptyString"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
     </LinearLayout>
-    <ScrollView
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFav"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/linearLayoutMain">
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:id="@+id/linearLayoutFav">
-           <ListView
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:id="@+id/listViewFavourites">
-           </ListView>
-       </LinearLayout>
-    </ScrollView>
+
+        <ListView
+            android:id="@+id/listViewFavourites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
 </RelativeLayout>

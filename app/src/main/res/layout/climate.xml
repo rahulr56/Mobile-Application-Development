@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5sp">
 
+    <ImageView
+        android:id="@+id/imageViewCurrentWeather"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginStart="10sp"
+        android:contentDescription="@string/descString"
+        android:elevation="6sp"
+        android:padding="3sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emptyString"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:id="@+id/textViewCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emptyString"
+            android:textColor="@color/colorGrey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="@string/emptyString"
+        android:textSize="25sp" />
 </LinearLayout>

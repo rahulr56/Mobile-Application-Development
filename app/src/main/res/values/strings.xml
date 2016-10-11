@@ -1,6 +1,29 @@
 <resources>
     <string name="app_name">HomeWork05</string>
-    <string name="loadingHourlyData">Loading Hourly Data...</string>
+    <string name="loadingHourlyData">Loading Hourly Data&#8230;</string>
     <string name="HourlyData">Hourly Data</string>
     <string name="currLocation">Current Location : </string>
+    <string name="emptyString" />
+    <string name="submitString">Submit</string>
+    <string name="feelsLikeString">Feels Like :</string>
+    <string name="humidityString">Humidity :</string>
+    <string name="dewPointString">Dew Point :</string>
+    <string name="pressureString">Pressure :</string>
+    <string name="cloudsString">Clouds :</string>
+    <string name="windsString">Winds :</string>
+    <string name="updatedOnString">Updated On : </string>
+    <string name="percentageString">%</string>
+    <string name="fahrenheitString"> Fahrenheit</string>
+    <string name="mphString">mph , </string>
+    <string name="hintCityString">City (i.e., Charlotte)</string>
+    <string name="hintStateString">State (i.e., NC)</string>
+    <string name="descString">This image view is to display the weather icon at the specific hour</string>
+    <string name="addtToFavString">Add to Favourites</string>
+    <string name="addedToFavString">City added to Favourites!</string>
+    <string name="connectingString">Connecting....</string>
+    <string name="invalidString">Invalid state or city! </string>
+    <string name="noFavCitiesString">There is no city in your favourites! </string>
+    <string name="favCitiesString">Favourites </string>
+    <string name="favCityAlreadyPresentString">Updated Favorites Record </string>
+    <string name="favCityDeletedString">City Deleted from Favourites! </string>
 </resources>

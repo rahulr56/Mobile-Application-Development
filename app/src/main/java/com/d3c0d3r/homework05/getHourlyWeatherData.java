@@ -1,73 +1,65 @@
 package com.d3c0d3r.homework05;
 
 import android.os.AsyncTask;
-import android.util.Log;
+import android.widget.Toast;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
 
-/**
- * Created by d3c0d3R on 06-Oct-16.
- */
-public class getHourlyWeatherData extends AsyncTask<Object, Object, ArrayList<WeatherData>> {
-    MainActivity activity;
+public class getHourlyWeatherData extends AsyncTask<String, Void, String> {
+    HourlyWeatherForecast activity;
+    String urlString;
 
-    public getHourlyWeatherData(MainActivity activity) {
+    public getHourlyWeatherData(HourlyWeatherForecast activity, String urlString) {
         this.activity = activity;
+        this.urlString = urlString;
     }
 
     @Override
-    protected ArrayList<WeatherData> doInBackground(Object... params) {
-        String urlString = "http://api.wunderground.com/api/10d786ddaefcdb39/hourly/q/nc/charlotte.json";
-        String json = null;
+    protected String doInBackground(String... params) {
         try {
             URL url = new URL(urlString);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             con.connect();
-            if(con.getResponseCode()==HttpURLConnection.HTTP_OK) {
+            if (con.getResponseCode() == HttpURLConnection.HTTP_OK) {
                 BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
                 StringBuilder buffer = new StringBuilder();
-                String line ="";
-                while ((line=reader.readLine()) != null) {
+                String line;
+                while ((line = reader.readLine()) != null) {
                     buffer.append(line);
-                    Log.d("Data", line);
                 }
-                return WeatherParserUtil.WeatherJsonParser(buffer.toString());
+                return buffer.toString();
             }
-        } catch (IOException e) {
-
-            e.printStackTrace();
-        }
-
-        /*try {
-            json = IOUtils.toString(new URL(url));
         } catch (IOException e) {
             e.printStackTrace();
         }
-        JsonParser parser = new JsonParser();
-        // The JsonElement is the root node. It can be an object, array, null or
-        // java primitive.
-        JsonElement element = parser.parse(json);
-        // use the isxxx methods to find out the type of jsonelement. In our
-        // example we know that the root object is the Albums object and
-        // contains an array of dataset objects
-        if (element.isJsonObject()) {
-            JsonObject albums = element.getAsJsonObject();
-            Log.d("Rahul",albums.get("hourly_forecast").getAsString());
-            JsonArray datasets = albums.getAsJsonArray("0");
-            for (int i = 0; i < datasets.size(); i++) {
-                JsonObject dataset = datasets.get(i).getAsJsonObject();
-                Log.d("Rahul",dataset.get("album_title").getAsString());
-            }
-        }
-        StringBuilder sb = new StringBuilder();
-        sb.append("Gson.toJson() example: \n");
-        sb.append("Cart Object: ").append(gson.fromJson().append("\n");*/
         return null;
+    }
+
+    @Override
+    protected void onPostExecute(String s) {
+        if (s != null) {
+            Gson gson = new GsonBuilder().create();
+            WeatherJSONHolder holder;// = new WeatherJSONHolder();
+            holder = gson.fromJson(s.toString(), WeatherJSONHolder.class);
+            if (holder.response.error != null) {
+                try {
+                    activity.setError(holder.response.error.description);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                return;
+            }
+            activity.setData(holder);
+        } else {
+            Toast.makeText(activity.getBaseContext(), "No data received from Server!", Toast.LENGTH_LONG).show();
+        }
     }
 }

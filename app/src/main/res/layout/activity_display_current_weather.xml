@@ -5,9 +5,181 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.d3c0d3r.homework05.DisplayCurrentWeather">
 
+    <LinearLayout
+        android:id="@+id/linearLayoutCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        android:padding="5sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3sp"
+            android:text="@string/currLocation"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewSetCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3sp"
+            android:text="@string/emptyString"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold|normal" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewCurrentCondition"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_below="@id/linearLayoutCity"
+        android:contentDescription="@string/descString"
+        android:padding="10sp" />
+
+    <TextView
+        android:id="@+id/textViewMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewCurrentCondition"
+        android:layout_centerInParent="true"
+        android:text="@string/emptyString"
+        android:textColor="@color/colorGrey"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewFillMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewCurrentCondition"
+        android:layout_marginStart="10sp"
+        android:layout_toEndOf="@id/textViewMaxTemp"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/pageBreak"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:layout_below="@id/textViewFillMaxTemp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="29sp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pageBreak"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/feelsLikeString" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/humidityString" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/dewPointString" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/pressureString" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/cloudsString" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/windsString" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewFeelsLike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/emptyString"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textViewHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/emptyString"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textViewDewPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/emptyString"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textViewPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/emptyString"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textViewClouds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/emptyString"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textViewWinds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="@string/emptyString"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>
