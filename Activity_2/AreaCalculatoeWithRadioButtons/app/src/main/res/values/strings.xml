@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AreaCalculatoeWithRadioButtons</string>
+    <string name="length1">Length 1 :</string>
+    <string name="length2">Length 2 :</string>
+    <string name="area">Area :</string>
+    <string name="areaRect">Rectangle</string>
+    <string name="areaSquare">Square</string>
+    <string name="areaTriangle">Triangle</string>
+    <string name="areaCircle">Circle</string>
+    <string name="enterLength">Enter Length</string>
+    <string name="clearAll">Clear All</string>
+    <string name="calculate">Calculate</string>
+</resources>

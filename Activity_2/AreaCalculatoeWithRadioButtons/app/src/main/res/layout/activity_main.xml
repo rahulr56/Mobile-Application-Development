@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.falc0n.areacalculatoewithradiobuttons.MainActivity">
+    <TextView
+        android:id="@+id/textViewLen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/length1"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/editTextLen2" />
+    <TextView
+        android:id="@+id/textViewLen2"
+        android:layout_marginStart="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLen1"
+        android:layout_marginTop="25dp"
+        android:text="@string/length2"
+        android:padding="10sp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextLen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewLen2"
+        android:layout_alignStart="@+id/editTextLen2"
+        android:layout_marginRight="20sp"
+        android:ems="10"
+        android:hint="@string/enterLength"
+        android:inputType="number"
+        android:padding="10sp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextLen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLen2"
+        android:layout_alignBottom="@+id/textViewLen2"
+        android:layout_marginRight="20sp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/textViewLen2"
+        android:ems="10"
+        android:hint="@string/enterLength"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/textViewArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewLen2"
+        android:layout_below="@+id/editTextLen2"
+        android:layout_marginTop="25dp"
+        android:text="@string/area"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textViewDispCalcArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewArea"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:orientation="vertical"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        android:layout_below="@+id/textViewArea"
+        android:layout_alignStart="@+id/textViewArea"
+        android:layout_marginStart="25dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:text="@string/areaTriangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonTriangle" />
+
+        <RadioButton
+            android:text="@string/areaSquare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonSquare" />
+
+        <RadioButton
+            android:text="@string/areaCircle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonCircle" />
+
+        <RadioButton
+            android:text="@string/areaRect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonRectangle" />
+
+        <RadioButton
+            android:text="@string/clearAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonClearAll" />
+    </RadioGroup>
+
+    <Button
+        android:text="@string/calculate"
+        android:paddingRight="50sp"
+        android:paddingLeft="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/buttonCalculate"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

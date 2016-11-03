@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">App1</string>
+    <string name="length1">Length 1 :</string>
+    <string name="length2">Length 2 :</string>
+    <string name="area">Area :</string>
+    <string name="areaRect">Area of Rectangle</string>
+    <string name="areaSquare">Area of Square</string>
+    <string name="areaTriangle">Area of Triangle</string>
+    <string name="areaCircle">Area of Circle</string>
+    <string name="enterLength">Enter Length</string>
+    <string name="clearAll">Clear All</string>
+    <string name="calculate">Calculate</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.falc0n.app1.MainActivity">
+
+    <TextView
+        android:text="@string/length1"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textViewLen1" />
+
+    <TextView
+        android:text="@string/length2"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLen1"
+        android:layout_alignEnd="@+id/textViewLen1"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textViewLen2" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/enterLength"
+        android:textColor="@android:color/black"
+        android:padding="10sp"
+        android:id="@+id/editTextLen1"
+        android:layout_marginRight="20sp"
+        android:layout_above="@+id/textViewLen2"
+        android:layout_alignStart="@+id/editTextLen2" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/enterLength"
+        android:textColor="@android:color/black"
+        android:id="@+id/editTextLen2"
+        android:layout_marginRight="20sp"
+        android:layout_alignBaseline="@+id/textViewLen2"
+        android:layout_alignBottom="@+id/textViewLen2"
+        android:layout_toEndOf="@+id/textViewLen2"
+        android:layout_marginStart="10dp" />
+
+
+
+    <TextView
+        android:text="@string/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLen2"
+        android:layout_alignStart="@+id/textViewLen2"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textViewArea"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewArea"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewDispCalcArea"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingRight="30sp"
+        android:paddingLeft="30sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30sp"
+        android:layout_below="@id/textViewDispCalcArea"
+        >
+
+        <Button
+            android:text="@string/areaRect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAreaRectangle" />
+
+
+        <Button
+            android:text="@string/areaCircle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAreaCircle"/>
+        <Button
+            android:text="@string/areaSquare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAreaSquare" />
+
+        <Button
+            android:text="@string/areaTriangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAreaTriangle" />
+        <Button
+            android:text="@string/clearAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonClearAll"/>
+    </LinearLayout>
+</RelativeLayout>
