@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    tools:context="com.falc0n.activities.DisplayActivity">
+
+    <TextView
+        android:text="@string/stuInfoString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textViewDisplayHead"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="@string/editNameString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDisplayHead"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textViewName"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="@string/emptyString"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textViewDispName"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="textStart"
+        android:layout_alignBaseline="@+id/textViewName"
+        android:layout_alignBottom="@+id/textViewName"
+        android:layout_toEndOf="@+id/textViewName"
+        android:layout_width="160sp" />
+    <TextView
+        android:text="@string/editEmailString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewEmail"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="@string/emptyString"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textViewDispEmail"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="textStart"
+        android:layout_alignBaseline="@+id/textViewEmail"
+        android:layout_alignBottom="@+id/textViewEmail"
+        android:layout_toEndOf="@+id/textViewEmail" />
+
+    <TextView
+        android:text="@string/editDeptString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEmail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewDepartment"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="@string/emptyString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textViewDispDept"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="textStart"
+        android:layout_alignBaseline="@+id/textViewDepartment"
+        android:layout_alignBottom="@+id/textViewDepartment"
+        android:layout_toEndOf="@+id/textViewDepartment" />
+  <TextView
+        android:text="@string/editMoodString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDepartment"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewMood"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="@string/emptyString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textViewDispMood"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="textStart"
+        android:layout_alignBaseline="@+id/textViewMood"
+        android:layout_alignBottom="@+id/textViewMood"
+        android:layout_toEndOf="@+id/textViewMood" />
+
+    <ImageButton
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/ic_action_edit"
+        android:layout_alignBottom="@+id/textViewName"
+        android:layout_marginStart="288dp"
+        android:id="@+id/imageButtonEditName" />
+    <ImageButton
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/ic_action_edit"
+        android:layout_alignBottom="@+id/textViewEmail"
+        android:layout_marginStart="288dp"
+        android:id="@+id/imageButtonEditEmail" />
+    <ImageButton
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/ic_action_edit"
+        android:layout_alignBottom="@+id/textViewDepartment"
+        android:layout_marginStart="288dp"
+        android:id="@+id/imageButtonEditDept" />
+    <ImageButton
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/ic_action_edit"
+        android:layout_alignBottom="@+id/textViewMood"
+        android:layout_marginStart="288dp"
+        android:id="@+id/imageButtonEditMood" />
+
+    <Button
+        android:text="@string/finishString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMood"
+        android:layout_toEndOf="@+id/textViewDepartment"
+        android:layout_marginTop="90dp"
+        android:id="@+id/buttonFinish" />
+
+
+</RelativeLayout>

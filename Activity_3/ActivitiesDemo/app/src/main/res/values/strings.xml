@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Activities</string>
+    <string name="nameString">Name</string>
+    <string name="emailString">Email</string>
+    <string name="deptString">Department</string>
+    <string name="sisString">SIS</string>
+    <string name="csString">CS</string>
+    <string name="bioString">BIO</string>
+    <string name="othersString">OTHERS</string>
+    <string name="moodString">Your Current Mood :</string>
+    <string name="submitString">Submit</string>
+    <string name="editNameString">Name : </string>
+    <string name="editMoodString">Mood : </string>
+    <string name="editDeptString">Department : </string>
+    <string name="editEmailString">Email : </string>
+    <string name="editInfoString">Edit Information</string>
+    <string name="stuInfoString">Student Information</string>
+    <string name="saveString">Save</string>
+    <string name="emptyString" />
+    <string name="finishString">Finish</string>
+</resources>

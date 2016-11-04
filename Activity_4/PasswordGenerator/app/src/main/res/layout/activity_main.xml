@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context="com.falc0n.passwordgenerator.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp"
+        android:id="@+id/textViewCountHead"
+        android:textColor="@android:color/black"
+        android:text="@string/passwordCount" />
+
+    <TextView
+        android:text="@string/emptyString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewCountHead"
+        android:layout_toEndOf="@+id/textViewCountHead"
+        android:layout_marginStart="30dp"
+        android:id="@+id/textViewDispPassCount"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:layout_below="@+id/textViewCountHead"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:max="9"
+        android:id="@+id/seekBarPassCount" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp"
+        android:id="@+id/textViewLengthHead"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/seekBarPassCount"
+        android:text="@string/passwordLength" />
+
+    <TextView
+        android:text="@string/emptyString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewLengthHead"
+        android:layout_toEndOf="@+id/textViewLengthHead"
+        android:layout_marginStart="30dp"
+        android:id="@+id/textViewDispPassLength"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:layout_below="@+id/textViewLengthHead"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:max="15"
+        android:id="@+id/seekBarPassLength" />
+
+    <TextView
+        android:text="@string/passwordString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarPassLength"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView4"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:text="@string/genThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/buttonThread" />
+
+    <Button
+        android:text="@string/genAsync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/buttonAsync"
+        android:layout_below="@+id/buttonThread"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/emptyString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonThread"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginStart="18dp"
+        android:id="@+id/textViewDispSelPassword"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark" />
+</RelativeLayout>

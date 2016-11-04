@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.falc0n.activities.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:id="@+id/editTextName"
+        android:layout_marginEnd="30sp"
+        android:hint="@string/nameString" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginEnd="30sp"
+        android:id="@+id/editTextEmail"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName"
+        android:hint="@string/emailString" />
+
+    <TextView
+        android:text="@string/deptString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textViewDeptHead"
+        android:textSize="22sp"
+        android:layout_marginEnd="30sp"
+        android:textColor="@android:color/background_dark" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDeptHead"
+        android:layout_alignStart="@+id/textViewDeptHead"
+        android:layout_marginTop="28dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:text="@string/sisString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonSis"
+            android:layout_weight="1"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="@string/csString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonCS"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/bioString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonBio"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/othersString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonOthers"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/moodString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textViewMoodHead"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMoodHead"
+        android:layout_alignStart="@+id/textViewMoodHead"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="30sp"
+        android:id="@+id/seekBarMood"
+        android:max="100" />
+
+    <Button
+        android:text="@string/submitString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30sp"
+        android:layout_below="@id/seekBarMood"
+        android:layout_marginTop="20sp"
+        android:layout_alignStart="@+id/seekBarMood"
+        android:id="@+id/buttonSubmit" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBarMood"
+        android:layout_toEndOf="@+id/textViewDeptHead"
+        android:id="@+id/textViewDisplaySeekBarMood"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark" />
+
+</RelativeLayout>

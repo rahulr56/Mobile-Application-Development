@@ -11,14 +11,14 @@ The description of the application is present inside the assignments named
 ##Description
 
 ###Activity_1:
-	This activity includes building Area calculator there by introducing onClick operation for buttons and usage of Radio Buttons.
  
 ###Activity_2:
+	This activity includes building Area calculator there by introducing onClick operation for buttons and usage of Radio Buttons.
 
 ###Activity_3:
-
+	This activity teches various aspects of Intents, passing data to intents and receiving data from another activity. 
 ###Activity_4:
-
+	This activity is to demo the use of Asynchronous tasks and threadpools in android.
 ###Activity_5:
 
 ###Activity_6:
