@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HttpConnectionDemo</string>
+    <string name="goString">Go</string>
+    <string name="chooseString">Choose a keyword</string>
+    <string name="loadingDirString">Loading Dictionary</string>
+    <string name="loadingPhotoString">Loading Photo</string>
+    <string name="emptyString"></string>
+    <string name="errorString">There are no images to be displayed for this keyword!</string>
+    <string-array name="searchKeywords">
+        <item>UNCC</item>
+        <item>Android</item>
+        <item>Winter</item>
+        <item>Aurora</item>
+        <item>Wonders</item>
+    </string-array>
+</resources>

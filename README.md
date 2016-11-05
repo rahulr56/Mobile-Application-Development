@@ -20,7 +20,7 @@ The description of the application is present inside the assignments named
 ###Activity_4:
 	This activity is to demo the use of Asynchronous tasks and threadpools in android.
 ###Activity_5:
-
+	This activity give the introduction to basic HTTPUrl connection, retrieve and parse data,display images using Asynchronus objects.
 ###Activity_6:
 
 ###Activity_7:
