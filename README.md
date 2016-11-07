@@ -29,6 +29,9 @@ The description of the application is present inside the assignments named
 
 ###Activity_9:
 
+###Activity_10:
+	This activity is an introductio to Firebase, integrating Firebase to your android apllicatio, database query, update, insertion, user authentication etc.,
+
 ###Assignment_1:
 
 ###Assignment_2:
