@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     public final static int RC_SIGN_IN = 100;
     private FirebaseAuth auth;
     static String currentUserId;
-    int backCount = 0;
+
     GoogleApiClient client;
 
     @Override
@@ -37,44 +37,30 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         auth = FirebaseAuth.getInstance();
-/*
-        Log.d(LOG_TAG,"Email Verified"+ auth.getCurrentUser().isEmailVerified());
-        Log.d(LOG_TAG,"UID "+auth.getCurrentUser().getUid());
-        Log.d(LOG_TAG,"Email "+auth.getCurrentUser().getEmail());
-        Log.d(LOG_TAG,"Name"+auth.getCurrentUser().getDisplayName());
-*/
-        if (auth.getCurrentUser() != null) {
-            Log.d(LOG_TAG,"user is not null");
-            currentUserId = auth.getCurrentUser().getUid();
-            startExpenseActivity();
-        }
-        else {
-            final GoogleSignInOptions signInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                    .requestEmail()
-                    .build();
+        final GoogleSignInOptions signInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
 
-            client = new GoogleApiClient.Builder(this)
-                    .enableAutoManage(this, this)
-                    .addApi(Auth.GOOGLE_SIGN_IN_API, signInOptions)
-                    .build();
-            findViewById(R.id.buttonLogIn).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    String email = ((EditText) findViewById(R.id.editTextEmail)).getText().toString().trim();
-                    String password = ((EditText) findViewById(R.id.editTextPassword)).getText().toString().trim();
-                    signIn(email, password);
-                }
-            });
-            findViewById(R.id.buttonNewAccount).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
-                    startActivity(intent);
-                }
-            });
-        }
+        client = new GoogleApiClient.Builder(this)
+                .enableAutoManage(this,this)
+                .addApi(Auth.GOOGLE_SIGN_IN_API,signInOptions)
+                .build();
+        findViewById(R.id.buttonLogIn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String email = ((EditText)findViewById(R.id.editTextEmail)).getText().toString().trim();
+                String password = ((EditText)findViewById(R.id.editTextPassword)).getText().toString().trim();
+                signIn(email,password);
+            }
+        });
+        findViewById(R.id.buttonNewAccount).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,SignUpActivity.class);
+                startActivity(intent);
+            }
+        });    }
 
-    }
 
     public  boolean validateForm(String email, String password) {
         boolean valid = true;
@@ -110,24 +96,39 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                             }
                         else {
                             currentUserId = auth.getCurrentUser().getUid();
-                            startExpenseActivity();
+                            Intent intent = new Intent(MainActivity.this,AllExpensesActivity.class);
+                            startActivity(intent);
                         }
                     }
                 });
     }
-
-    private void startExpenseActivity() {
-        Intent intent = new Intent(MainActivity.this,AllExpensesActivity.class);
-        startActivity(intent);
+/*
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode)
+        {
+            case RC_SIGN_IN:
+                GoogleSignInResult signInResult = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+                handleSignInResult(signInResult);
+        }
     }
+
+    private void handleSignInResult(GoogleSignInResult signInResult) {
+        Log.d(LOG_TAG,"handleSignInResult : "+ signInResult.isSuccess());
+        if(signInResult.isSuccess())
+        {
+            GoogleSignInAccount account =  signInResult.getSignInAccount();
+            Log.d(LOG_TAG,"Hello, "+account.getDisplayName());
+        }
+        else {
+            Toast.makeText(MainActivity.this,"Login was not successful!",Toast.LENGTH_LONG).show();
+        }
+    }
+*/
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
         Log.d(LOG_TAG,"onConnectionFailed : "+connectionResult);
-    }
-
-    @Override
-    public void onBackPressed() {
-            super.onBackPressed();
     }
 }

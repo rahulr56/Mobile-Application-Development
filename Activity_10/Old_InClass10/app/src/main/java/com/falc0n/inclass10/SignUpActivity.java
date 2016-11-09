@@ -38,13 +38,15 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d(MainActivity.LOG_TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
 
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
-                            Toast.makeText(SignUpActivity.this,"Sign up was not successful! Try with a different email Id.",Toast.LENGTH_LONG).show();
+                            Toast.makeText(SignUpActivity.this,"Login was not successful!",Toast.LENGTH_LONG).show();
                         }else {
                             MainActivity.currentUserId = mAuth.getCurrentUser().getUid();
-                            /*Intent intent = new Intent(SignUpActivity.this,AllExpensesActivity.class);
-                            startActivity(intent);*/
-                            finish();
+                            Intent intent = new Intent(SignUpActivity.this,AllExpensesActivity.class);
+                            startActivity(intent);
                         }
                     }
                 });
@@ -69,9 +71,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
+        Log.d("hh","Clicked");
         switch (view.getId())
         {
             case R.id.buttonSUSignUp:
+                Log.d("hh","Sign up Clicked");
                 String email = ((EditText)findViewById(R.id.editTextSUEmail)).getText().toString().trim();
                 String name = ((EditText)findViewById(R.id.editTextSUFullName)).getText().toString().trim();
                 String password = ((EditText)findViewById(R.id.editTextSUPassword)).getText().toString().trim();
@@ -81,10 +85,5 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 finish();
                 break;
         }
-    }
-
-    @Override
-    public void onBackPressed() {
-        return;
     }
 }

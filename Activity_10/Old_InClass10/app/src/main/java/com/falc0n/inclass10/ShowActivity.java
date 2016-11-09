@@ -18,7 +18,6 @@ public class ShowActivity extends AppCompatActivity {
             ((TextView)findViewById(R.id.textViewSECategory)).setText(expense.category);
             String amount = "$ "+expense.getAmount();
             ((TextView)findViewById(R.id.textViewSEAmount)).setText(amount);
-            ((TextView)findViewById(R.id.textViewSEDate)).setText(expense.getAddedDate());
             findViewById(R.id.buttonSEClose).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -26,10 +25,5 @@ public class ShowActivity extends AppCompatActivity {
                 }
             });
         }
-    }
-
-    @Override
-    public void onBackPressed() {
-        return;
     }
 }

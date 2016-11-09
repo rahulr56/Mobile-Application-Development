@@ -18,7 +18,6 @@
     <string name="expNameString">Expense Name</string>
     <string name="closeString">Close</string>
     <string name="emptyString" />
-    <string name="dateString">Date</string>
     <string-array name="categoryArray">
         <item>Groceries</item>
         <item>Invoice</item>

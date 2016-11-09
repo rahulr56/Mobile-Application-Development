@@ -9,9 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,9 +24,8 @@ public class AllExpensesActivity extends AppCompatActivity {
     final String DB_URL ="project/fir-demo-93470/database/data/expenses/"+MainActivity.currentUserId;
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference ref ;
-    List<Expense> expenseList = new ArrayList<>();
+    final List<Expense> expenseList = new ArrayList<>();
     ExpenseAdapter arrayAdapter;
-    static  int backCount = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -73,13 +70,9 @@ public class AllExpensesActivity extends AppCompatActivity {
     private void deleteData(int i) {
         Log.d(MainActivity.LOG_TAG,"Size of array is "+expenseList.size());
         expenseList.remove(i);
-        List<Expense> expenseArrayList = new ArrayList<>();
-        expenseArrayList = expenseList;
         checkArraySize();
         Log.d(MainActivity.LOG_TAG,"Size of array after deletion is "+expenseList.size());
-        Log.d(MainActivity.LOG_TAG,"Size of array after deletion is "+expenseArrayList.size());
-        ref.setValue(expenseArrayList);
-        expenseArrayList.clear();
+        ref.setValue(expenseList);
     }
 
     private void checkArraySize() {
@@ -93,6 +86,7 @@ public class AllExpensesActivity extends AppCompatActivity {
         else {
             (findViewById(R.id.listViewALExp)).setVisibility(View.VISIBLE);
             (findViewById(R.id.textViewALERROR)).setVisibility(View.INVISIBLE);
+            arrayAdapter.notifyDataSetChanged();
         }
     }
 
@@ -110,7 +104,6 @@ public class AllExpensesActivity extends AppCompatActivity {
                     expenseList.add(expense);
                 }
                 checkArraySize();
-                arrayAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -122,16 +115,6 @@ public class AllExpensesActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        backCount++;
-        if(backCount  > 2)
-        {
-            FirebaseAuth.getInstance().signOut();
-            MainActivity.currentUserId=null;
-            Toast.makeText(AllExpensesActivity.this,"You have been signed out!!",Toast.LENGTH_SHORT).show();
-            backCount = 0;
-            finish();
-            super.onBackPressed();
-        }
         return;
     }
 }

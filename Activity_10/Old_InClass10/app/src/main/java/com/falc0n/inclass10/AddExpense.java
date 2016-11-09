@@ -2,7 +2,6 @@ package com.falc0n.inclass10;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -12,8 +11,6 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 
 public class AddExpense extends AppCompatActivity {
@@ -48,9 +45,7 @@ public class AddExpense extends AppCompatActivity {
                 }
                 int sel =spinner.getSelectedItemPosition();
                 String category = categoryArray[sel];
-                String  date = new SimpleDateFormat("MM-dd-yyyy").format(new Date());;
-                Log.d(MainActivity.LOG_TAG,"Date is "+date);
-                Expense expense = new Expense(name,amount,category,date);
+                Expense expense = new Expense(name,amount,category,MainActivity.currentUserId);
                 writeNewExpense(expense);
                 Toast.makeText(AddExpense.this,"Added expense!",Toast.LENGTH_LONG);
                 finish();
@@ -68,7 +63,6 @@ public class AddExpense extends AppCompatActivity {
         map.put("name", expense.getName());
         map.put("amount", expense.getAmount());
         map.put("category", expense.getCategory());
-        map.put("addedDate", expense.getAddedDate());
         mDatabaseReference.child(MainActivity.currentUserId).push().setValue(map);
         expenseCount++;
     }
