@@ -1,0 +1,115 @@
+INTRODUCTION:
+https://developer.android.com/studio/intro/index.html | Meet Android Studio | Android Studio
+https://www.youtube.com/watch?v=c5CEir-uKqw | Tour Over the Different Tools - YouTube
+https://www.youtube.com/watch?v=WdLMO8sSnpA | Project Details and R File - YouTube
+https://www.youtube.com/watch?v=j3TuEMlTq1A | Logging and LogCat - YouTube
+https://www.youtube.com/watch?v=Df3_5RHjJew | Accessing String Resources - YouTube
+https://www.youtube.com/watch?v=neEQVfB86gA | Exporting a Project in Android Studio - YouTube
+https://www.youtube.com/watch?v=sjXKl1F2hiQ | Introduction to UI Concepts - YouTube
+https://www.youtube.com/watch?v=O_pyuk254yk | Implementing Event Handlers - YouTube
+https://www.youtube.com/watch?v=L1tL6ZYnr1w | Radio Buttons and Radio Groups - YouTube
+https://www.genymotion.com/ | Genymotion – Fast & Easy Android Emulator
+https://www.youtube.com/watch?v=PM5mUrW5mLM | Initial Setup - YouTube
+https://www.jetbrains.com/help/idea/2016.2/keyboard-shortcuts-you-cannot-miss.html | Most indispensable IntelliJ IDEA keyboard shortcuts.
+
+INTENTS
+https://www.youtube.com/watch?v=i5ed2y03Zh0 | Introduction to Android Activity - YouTube
+https://www.youtube.com/watch?v=KZHlG9EeJdg | Creating Dynamic Layouts - YouTube
+https://www.youtube.com/watch?v=KOMWRUErbc4 | Android Intents - YouTube
+https://www.youtube.com/watch?v=kC2Tgoo7_ec | Explicit Intents - YouTube
+https://www.youtube.com/watch?v=Pjv3RpLhvvw | Implicit Intents - YouTube
+https://www.youtube.com/watch?v=Xff10zQ01CU | Passing Simple Data Between Activities - YouTube
+https://www.youtube.com/watch?v=4wFCmTlHeM8 | Passing Parcelable - YouTube
+https://www.youtube.com/watch?v=0fUU5wjGDjQ | Other Intents - YouTube
+https://www.youtube.com/watch?v=eHGLjyygYaA | Lecture : AlertDialog - YouTube
+https://www.youtube.com/watch?v=LQrBhKMO8Bc | AlertDialog Demo - YouTube
+https://www.youtube.com/watch?v=R_5gbDA-YNg | Starting Activity For Result - YouTube
+
+THREADS
+https://www.youtube.com/watch?v=mMhBu-46eTI | Lecture : Concurrency Introduction - YouTube
+https://www.youtube.com/watch?v=ThaaSHNtLsI | Intro to Threads and Thread Pools - YouTube
+https://www.youtube.com/watch?v=mOJIOG6ZqiE | Lecure : Concurrency Handlers - YouTube
+https://www.youtube.com/watch?v=tembPDruzNs | Intro to Handlers - YouTube
+https://www.youtube.com/watch?v=o802YL2SOLU | Lecture : Concurrency AsyncTask - YouTube
+https://www.youtube.com/watch?v=FqzH9m4yKuo | AsyncTask Introduction - YouTube
+https://www.youtube.com/watch?v=U9Tf7h-etl0 | Section 3: Module 8: Part 1: the Active Object Pattern - YouTube
+
+HTTP CONNECTIONS AND JSON PARSING
+https://developer.android.com/training/permissions/requesting.html | Requesting Permissions at Run Time | Android Developers
+https://www.youtube.com/watch?v=np8fB63LYvw | Lecture : Android HTTP Access Intro - YouTube
+https://www.youtube.com/watch?v=WUgOfaY7vGo | Android Check Connection - YouTube
+https://www.youtube.com/watch?v=nkzQCwgop5I | Lecture : HttpURLConnection - YouTube
+https://www.youtube.com/watch?v=XaGxjVqOli8 | Using the HttpURLConnection Library - YouTube
+https://www.youtube.com/watch?v=nEs14ulGgP8 | Sending Parameters HttpURLConnection - YouTube
+https://www.youtube.com/watch?v=jD1A4C0nT6k | Data Passing Using Interfaces - YouTube
+https://www.youtube.com/watch?v=27oN3nWUrOo | Lecture : Android Web Services JSON - YouTube
+https://www.youtube.com/watch?v=03eSdjxcK1k | JSON Parsing - YouTube
+
+XML PARSING
+https://www.youtube.com/watch?v=FknvOGcLHmc | Tools for Entrepreneurs: Introduction to APIs - YouTube
+https://www.youtube.com/watch?v=xUMgtCc245Q | Lecture : Android and XML Parsing - YouTube
+https://www.youtube.com/watch?v=BzaSP5KpKik | XML SAX Parsing - YouTube
+https://www.youtube.com/watch?v=jypkWyJqSLE | XML Pull Parsing - YouTube
+
+LISTVIEWS
+https://www.youtube.com/watch?v=YmndL0YdBR4 | Lecture : Android ListViews - YouTube
+https://www.youtube.com/watch?v=yKSs4YANNuU | ListView Introduction and Setup Demo - YouTube
+https://www.youtube.com/watch?v=vxyuhrMMgNM | ListView to Update Data Using Adapter - YouTube
+https://www.youtube.com/watch?v=Dj1nrjiMQJw | Extending ListView ArrayAdapter - YouTube
+
+SQLITE DATABASE
+https://www.youtube.com/watch?v=rbxRDy6hkWI | Lecture : Android Sqlite Database - YouTube
+https://www.youtube.com/watch?v=bOrf9fekDME | SQLite for Android - YouTube
+
+FRAGMENTS
+https://www.youtube.com/watch?v=TgAyg7MJom8 | Fragments: Fragment Life Cycle - YouTube
+https://www.youtube.com/watch?v=5O6PODF7tss | Fragments: Fragment and UI Components - YouTube
+https://www.youtube.com/watch?v=M22M3bb0lq4 | Fragments: Sending Data From Activity to Fragment - YouTube
+https://www.youtube.com/watch?v=5Snu3UECEfE | Fragments: Sending Data From Fragment to Activity - YouTube
+https://www.youtube.com/watch?v=z2jM5w4IQvc | Fragments : Dynamically Adding Fragments - YouTube
+https://www.youtube.com/watch?v=DjWCDWsoD84 | Fragments : Managing Multiple Fragments - YouTube
+
+LIBRARIES : OkHttp3, Postman, Pretty Time
+https://github.com/square/okhttp/wiki/Calls | Calls · square/okhttp Wiki · GitHub
+https://github.com/square/okhttp/wiki/Recipes | Recipes · square/okhttp Wiki · GitHub
+https://www.youtube.com/watch?v=ytR0vg9mTO8 | Android Tutorial From Beginner To Professional -071 OKHTTP, synchronous and asynchronous - YouTube
+https://github.com/square/okhttp | GitHub - square/okhttp: An HTTP+HTTP/2 client for Android and Java applications.
+http://www.ocpsoft.org/prettytime/ | PrettyTime - Elapsed Timestamp Formatting and Conversion for Java (Social, JSF2) | OCPsoft
+https://www.getpostman.com/ | Postman | Supercharge your API workflow
+https://www.getpostman.com/docs/introduction | Postman Docs
+
+FIREBASE DATA STORAGE
+https://firebase.google.com/docs/android/setup | Add Firebase to Your Android Project  |  Firebase
+https://firebase.google.com/docs/database/android/start/ | Set up Firebase Realtime Database for Android  |  Firebase
+https://firebase.google.com/docs/database/android/read-and-write | Read and Write Data on Android  |  Firebase
+https://firebase.google.com/docs/database/android/read-and-write | Read and Write Data on Android  |  Firebase
+https://firebase.google.com/docs/auth/android/manage-users | Manage Users in Firebase  |  Firebase
+https://www.youtube.com/watch?v=cNPCgJW8c-E | Getting Started with Firebase on Android - Firecasts - YouTube
+https://www.youtube.com/watch?v=SXlidHy-Tb8 | Getting Started with Firebase Auth on Android - Firecasts - YouTube
+https://www.youtube.com/watch?v=lpFDFK44pX8 | Getting Started with the Firebase Realtime Database on Android - Firecasts - YouTube
+https://www.genymotion.com/help/desktop/faq/#google-play-services | FAQ (Frequently Asked Questions) – Genymotion Android Emulator
+
+FIREBASE CLOUD STORAGE
+https://firebase.google.com/docs/storage/android/start | Get Started on Android  |  Firebase
+https://firebase.google.com/docs/storage/android/create-reference | Create a Storage Reference on Android  |  Firebase
+https://firebase.google.com/docs/storage/android/upload-files | Upload Files on Android  |  Firebase
+https://firebase.google.com/docs/storage/android/download-files | Download Files on Android  |  Firebase
+https://firebase.google.com/docs/storage/android/file-metadata | Use File Metadata on Android  |  Firebase
+https://firebase.google.com/docs/storage/android/delete-files | Delete Files on Android  |  Firebase
+https://firebase.google.com/docs/storage/android/handle-errors | Handle Errors on Android  |  Firebase
+https://www.youtube.com/watch?list=PLl-K7zZEsYLmxfvI4Ds2Atko79iVvxlaq&v=7puuTDSf3pk | Getting Started with Firebase Storage on Android - Firecasts - YouTube
+
+GOOGLE MAPS
+https://developers.google.com/maps/documentation/android-api/start#getting_the_google_maps_android_api_v2 | Getting Started  |  Google Maps Android API  |  Google Developers
+https://developers.google.com/maps/documentation/android-api/map | Map Objects  |  Google Maps Android API  |  Google Developers
+https://developers.google.com/maps/documentation/android-api/marker | Markers  |  Google Maps Android API  |  Google Developers
+https://developers.google.com/maps/documentation/android-api/infowindows | Info Windows  |  Google Maps Android API  |  Google Developers
+https://developers.google.com/places/android-api/ | Google Places API for Android  |  Google Developers
+https://developers.google.com/places/android-api/placepicker | Place Picker  |  Google Places API for Android  |  Google Developers
+https://developers.google.com/places/android-api/current-place | Current Place  |  Google Places API for Android  |  Google Developers
+https://developers.google.com/places/android-api/photos | Place Photos  |  Google Places API for Android  |  Google Developers
+https://uncc.instructure.com/courses/11264/pages/video-location-based-services-lecture?module_item_id=602138 | Video : Location Based Services (Lecture): 201680-Fall 2016-ITCS-4180-091:ITCS-5180-091:ITIS-4180-091:ITIS-5180-091_Combined
+https://uncc.instructure.com/courses/11264/pages/video-location-based-services-demo?module_item_id=602139 | Video : Location Based Services (Demo): 201680-Fall 2016-ITCS-4180-091:ITCS-5180-091:ITIS-4180-091:ITIS-5180-091_Combined
+
+REALM DATABASE
+https://realm.io/docs/java/latest/#getting-started | Realm: Create reactive mobile apps in a fraction of the time
