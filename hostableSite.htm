@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Hosted Site</title>
+</head>
+<script>
+function getSensorDetails()
+{
+  navigator.accelerometer.getCurrentAcceleration(function(acceleration)
+  {
+    // when success
+    console.log('Acceleration X/Y/Z ' + acceleration.x + '/'
+    + acceleration.y + '/'
+    + acceleration.z +
+    ' at ' + acceleration.timestamp);
+    x="X : "+acceleration.x+"\n"+
+    "Y : "+acceleration.y+"\n"+
+    "Z : "+acceleration.z+"\n"+
+    "At : "+acceleration.timestamp+"\n";
+    document.getElementById("hostedAcc").innerHTML="<pre>"+x+"</pre>"
+  }, function(err)
+  {
+    // when error
+    console.log('we have an error '+err.code+" : "+err.message);
+  });
+}
+navigator.accelerometer.watchAcceleration(getSensorDetails,
+  onErrorCallback,
+  {period: 100});
+
+function onSuccessCallback(acceleration)
+{
+  x="X : "+acceleration.x+"\n"+
+  "Y : "+acceleration.y+"\n"+
+  "Z : "+acceleration.z+"\n"+
+  "At : "+acceleration.timestamp+"\n";
+  document.getElementById("accDetails").innerHTML="<pre>"+x+"</pre>"
+}
+
+function onErrorCallback(errors)
+{
+  console.log("Error while accessing accelerometer with code "+errors.code+" and message "+errors.message);
+}
+</script>
+<body onload="getSensorDetails()">
+<h1 align="center"> This is a hosted Web page</h1>
+<div>
+  <p id="hostedAcc"> Get accelerometer information....</p>
+</div>
+
+</body>
+</html>
