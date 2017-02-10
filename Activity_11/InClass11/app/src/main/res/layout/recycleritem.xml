@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10sp"
+    android:elevation="4sp"
+    android:background="#a9a5a5"
+
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@android:drawable/sym_action_chat"
+        android:id="@+id/imageButtonChat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        android:id="@+id/imageButtonDelete"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textViewMessageTime" />
+
+    <RelativeLayout
+        android:layout_below="@id/imageButtonDelete"
+    android:layout_width="match_parent"
+        android:id="@+id/RR"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
+        android:id="@+id/imageViewRVIcon" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:id="@+id/textViewRVName"
+        android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/RR"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSenderName" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewMessageTime"
+        android:layout_below="@+id/RR"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp" />
+
+
+    <ListView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textViewMessageTime"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/listViewComments" />
+</RelativeLayout>

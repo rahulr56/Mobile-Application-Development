@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.falc0n.inclass11.ChatActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="?android:attr/alertDialogIcon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:id="@+id/imageButtonLogOutCA" />
+
+        <TextView
+            android:text="TextView"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textViewUserNameCA" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:background="#aeadad"
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginRight="15sp"
+        android:id="@+id/SS"
+        android:padding="5sp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp" />
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="15sp"
+        android:orientation="horizontal"
+        android:id="@+id/LLMessenger">
+
+        <EditText
+            android:id="@+id/editTextSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.12"
+            android:alpha="@android:integer/config_mediumAnimTime"
+            android:elevation="5sp"
+            android:ellipsize="start"
+            android:ems="10"
+            android:hint="Type a message to send"
+            android:inputType="text"
+            android:padding="8sp"
+            android:shadowColor="@android:color/black"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:elevation="5dp"
+            android:padding="8sp"
+            android:shadowColor="@android:color/black"
+            android:tint="#1b5e20"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+        <ImageButton
+            android:id="@+id/imageButtonGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="#ffffff"
+            android:elevation="5sp"
+            android:padding="8sp"
+            android:tint="#ff6d00"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+    </LinearLayout>
+</LinearLayout>

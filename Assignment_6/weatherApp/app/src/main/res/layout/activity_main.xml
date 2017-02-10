@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.falc0n.weatherapp.MainActivity">
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintCityString"
+            android:padding="10sp" />
+
+        <EditText
+            android:id="@+id/editTextState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:hint="@string/hintStateString"
+            android:padding="10sp" />
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:text="@string/submitString" />
+
+        <TextView
+            android:id="@+id/textViewNoItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/emptyString"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutMain">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rec_list">
+
+        </android.support.v7.widget.RecyclerView>
+        <!--<ListView
+            android:id="@+id/listViewFavourites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>-->
+    </LinearLayout>
+</RelativeLayout>

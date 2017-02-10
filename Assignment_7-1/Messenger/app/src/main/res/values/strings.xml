@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyMessenger</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="repPassword">Repeat Password</string>
+    <string name="signIn">Log In</string>
+    <string name="register">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+    <string name="profilePhoto">Choose Profile Photo</string>
+    <string name="settings">Settings</string>
+    <string name="changeProfilePic">Change Profile Photo</string>
+    <string name="signUp">Sign Up</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string-array name="genderOptions">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="facebook_app_id">132322400580147</string>
+
+</resources>

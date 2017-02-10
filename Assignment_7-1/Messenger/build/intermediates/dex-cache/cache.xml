@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_6ab342d825d482a941df92cfa44e356a3c010eb1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f47ede9561595584dca71104baa0fecb36dda87">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.8.0_96782d94dcd19f6e7d4429a880e2d50766ad64c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4438b1a7848a7c571122ba618aa1304514aabee6">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.8.0_18e1ebc51c980f62260c92a0a2f2c1a8268a3c13/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_8e88b3757cd994967348e4e6a8e8034eaa823154/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.0_2882d5e5c7584b8e677588e2075c28cc5f7ca2b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.8.0_49aee8f3bd30e2cf295517a3992187a2f03b67f2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.0_26db23087c4c28c1d92a07a82ca0d9d1414913c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7fd91ec2730fdaa82906aad32a3f3d3e574bae56">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.8.0_5b25dd4bed2a4013434b26030c4976ea3cb63c9b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="15e59454416c6341bd3ed2533b585cd340682dd1">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.8.0_b6b5e50f0f54095e26c194b61313af02fa507a06/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.0_97cb2dd18a08d5149d17d9bb0f1bf66e030ae449/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_dc4709b58066127a2bb33edc02c1673542bd86e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e1dfd02ffe50d9c5eca1555758cc58d703e7b384">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6d02da1915252582610a2c7dc447cdc3c4742bb5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_a16586cf16269dee89bba0b7e59f1f4d122bee27/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_a4da1e13b37b057f8af33d2f270643be8963bd4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_baa471d8a1e69cb669a0f3e4db8348bd09a042ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.8.0_f7ee249f70c395070962ba3d4f95a969c0cf2fdf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_135d3c6964eecee3d151423b67b7982688457297/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_353668256e40271b8dc6d003edf7171c4b408278/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_61ef92025898f69d56f456049f397049fe8fa3f3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_33e1a5a51d8d49b63e1197715162501d18b6088c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/.gradle/caches/modules-2/files-2.1/com.ocpsoft/ocpsoft-pretty-time/1.0.6/5e5199488bc0f700565b1a94c758f3759d9ff59f/ocpsoft-pretty-time-1.0.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e5199488bc0f700565b1a94c758f3759d9ff59f">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/ocpsoft-pretty-time-1.0.6_354a46bb2db8a87ea431eb5bafec00df6f216f9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_4150639f84f3d7d47f4d13281ff66a2c7c4bfdf3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03df48d3713661d66ad024b1e406259a4c26fcac">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.8.0_0a9a7b8d28abdbcbc3f5cebb91049f99cabcf4b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.8.0_5087b51791e25d07a19f26537b6ba4278186acf1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_ce0d67a271d545df26e64820ca8f6a2c541aa679/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.17.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="23c7c34bfb3cdc0599d49e581486b179bc6b2eee">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.17.0_e79a7f4980a1f20eeebff1356527fd6be06fbec9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_8de1f744e5d545ed8a3d12f22cf907ca97edbe0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_6241b2f54b659addcb7560312198285c8019a3fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.8.0_fb717a6e00d002b4797078104034cfa5779c5767/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.8.0_7395a24e5bcba6d6444f7242641accce29c525c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_4e6e2821bee5d06dd9f18bdbf75c64094260beee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-25.0.0_56669e53f05cd3bea661f5b9d2e13bc07012e91d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_50e3aff42f322d9b736ae7b9b20d2ba674808d42/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_1330c2e788a2d0a5c420b9703e3277d27ad24ca4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_e9ce7646471c123731bb8ada42f64e871cd1a036/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05748e3483bb6c17af4c0c56b4b204a18907a175">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_cad350c1738f477af5f3d76d79e6a6888e7df189/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_16efb0c14eefbcf0f23129413b2983868667ccf2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_e67b8238456952ed9a395e71a1b7ffb723fa702b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_592e9cb8cf19a39e5e803150983f91c41423941c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_9627f067154e4daf0f67430eb5e86bc84163d574/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3f8f779a22cbb4c4d0759467a4f1011bb5252970">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.8.0_cf9363b0a91f19e6a0573d416946b8e9cc3eaa96/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec9104b53aee77dfcfd2fe1c4add23ff7c4df55f">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.8.0_41a4a5dd9c5591dcc170d12fb17942eaff6e0de6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/fAlc0n/Documents/Mobile-Application-Development/Assignment_7/Homewor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_0356481b594f8d7750081e915c2530da293ca83c/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.falc0n.mymessenger.EditProfile">
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:visibility="invisible"
+        android:id="@+id/spinnerESGender"
+        android:layout_below="@+id/imageViewESProfilePic"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lastName"
+        android:textSize="20sp"
+        android:padding="5sp"
+        android:ems="10"
+        android:id="@+id/editTextESLastName"
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/buttonESSave"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        app:srcCompat="@drawable/user"
+        android:id="@+id/imageViewESProfilePic"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="114dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/firstName"
+        android:layout_below="@+id/imageViewESProfilePic"
+        android:ems="10"
+        android:padding="5sp"
+        android:textSize="25sp"
+
+        android:id="@+id/textViewESFirstName"
+        android:layout_above="@+id/editTextESLastName"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
+    <Button
+        android:text="SAVE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonESSave"
+        android:layout_alignTop="@+id/spinnerESGender"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_marginTop="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewESProfilePic"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editTextESFirstName"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="@string/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonESCancel"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

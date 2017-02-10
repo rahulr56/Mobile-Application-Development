@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#dadada">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="13dp"
+                android:id="@+id/textViewFavCityName"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal|left"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="162dp"
+                    android:layout_height="29dp"
+                    android:id="@+id/textViewfavouriteCityTemp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_horizontal|right" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lastUpdated"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_horizontal|left"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/btn_star_big_off"
+                android:id="@+id/imageViewStar" />
+        </LinearLayout>
+</LinearLayout>

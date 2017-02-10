@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10sp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RRCMReceivedMessage"
+        android:layout_width="230sp"
+        android:visibility="invisible"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:elevation="5dp"
+        android:background="@drawable/received_message"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewCMRecvSentImage"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textViewCMRecvSentMessage"
+            android:layout_width="220sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageViewCMRecvSentImage"
+            android:text="message"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewCMRecvMessageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textViewCMRecvSentMessage"
+            android:layout_below="@+id/textViewCMRecvSentMessage"
+            android:text="time" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="230sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sent_message"
+        android:elevation="5dp"
+        android:id="@+id/RRCMSentMessage"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageViewCMSentSentImage"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="message"
+            android:layout_width="220sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCMSentSentMessage"
+            android:textSize="20sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_below="@+id/imageViewCMSentSentImage"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCMSentMessageTime"
+            android:layout_below="@+id/textViewCMSentSentMessage"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_users"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.falc0n.mymessenger.UsersActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:background="#c3943c"
+        android:id="@+id/LLCAUserProfile"
+        android:layout_marginBottom="5sp">
+
+        <ImageButton
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginStart="5sp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:scaleType="fitCenter"
+            android:backgroundTint="#ffffff"
+            android:id="@+id/imageButtonCArProfilePic" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewUsersUserName"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="40sp"
+            android:layout_marginEnd="20sp"
+            android:layout_gravity="center"
+            android:layout_height="40sp"
+            android:scaleType="center"
+            app:srcCompat="@android:drawable/ic_lock_power_off"
+            android:id="@+id/imageButtonUsersLogOut"
+             />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerViewUsers"
+        android:layout_below="@id/LLCAUserProfile">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

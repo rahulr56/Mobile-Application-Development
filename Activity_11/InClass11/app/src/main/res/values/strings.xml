@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">InClass11</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="action_sign_in_only">SIGN IN</string>
+    <string name="register">REGISTER</string>
+    <string name="emailString">Email </string>
+    <string name="pwdString">Password</string>
+    <string name="fullNameString">Full Name</string>
+    <string name="newAccountString">Create New Account</string>
+    <string name="loginString">Login</string>
+    <string name="signUpString">Sign Up</string>
+    <string name="cancelString">Cancel</string>
+    <string name="curExpenseString">Current Expenses</string>
+    <string name="noExpString">There is no expense to show, Please add your expenses from the menu.</string>
+    <string name="delExpString">Expense Deleted</string>
+    <string name="detailsExpString">Expense Details</string>
+    <string name="addAnExpString">Add an Expense</string>
+    <string name="addExpString">Add Expense</string>
+    <string name="expCategoryString">Category</string>
+    <string name="amountString">Amount</string>
+    <string name="expNameString">Expense Name</string>
+    <string name="closeString">Close</string>
+    <string name="emptyString" />
+    <string name="dateString">Date</string>
+
+</resources>

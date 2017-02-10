@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Chat Room</string>
+    <string name="emailHint">Email</string>
+    <string name="passHint">Password</string>
+    <string name="fNHint">First Name</string>
+    <string name="lNHint">Last Name</string>
+    <string name="chPassHint">Choose Password</string>
+    <string name="repPassHint">Repeat Password</string>
+    <string name="typeMsgHint">Type message to send</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="cancel">Cancel</string>
+</resources>

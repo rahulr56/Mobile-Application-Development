@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.falc0n.mymessenger.ChatActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:background="#c3943c"
+        android:elevation="5sp"
+        android:id="@+id/LLCAUserProfile"
+        android:layout_marginBottom="5sp">
+
+        <ImageButton
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:backgroundTint="#ffffff"
+            android:tint="#000000"
+            android:layout_marginStart="5sp"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageButtonCArProfilePic" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCAsUserName"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="40sp"
+            android:layout_marginEnd="20sp"
+            android:layout_gravity="center"
+            android:layout_height="40sp"
+            android:scaleType="center"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/ic_lock_power_off"
+            android:id="@+id/imageButtonCALogOut" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/LLCASendMessage">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Type a message to send"
+            android:ems="10"
+            android:layout_marginRight="8sp"
+            android:id="@+id/editTextCAMessage"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:padding="5sp"
+            android:tint="#000000"
+            android:backgroundTint="#ffffff"
+            android:layout_marginRight="8sp"
+            app:srcCompat="@android:drawable/ic_menu_gallery"
+            android:id="@+id/imageButtonCAGallery" />
+
+        <ImageButton
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            app:srcCompat="@android:drawable/ic_menu_send"
+            android:id="@+id/imageButtonCASend"
+            android:padding="5sp"
+            android:tint="#000000"
+            android:backgroundTint="#ffffff"
+            android:layout_marginRight="8sp"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@id/LLCAUserProfile"
+        android:layout_above="@id/LLCASendMessage"
+        android:elevation="4sp"
+        android:layout_height="match_parent"
+        android:headerDividersEnabled="false"
+        android:divider="#00ffffff"
+        android:smoothScrollbar="true"
+        android:footerDividersEnabled="false"
+        android:id="@+id/listViewCAMessages" />
+</RelativeLayout>
