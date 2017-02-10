@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cn.expensecalculator.AddExpenseActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/addExpenseHeader"
+        android:text="@string/addExpenseHead"
+        android:textSize="25sp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5sp"
+        android:orientation="vertical"
+        android:layout_below="@+id/addExpenseHeader"
+        android:id="@+id/linearLayoutAddExpense">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addExpenseName"
+            android:textSize="15sp"            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextExpenseName"
+            android:textColor="@color/colorBlack" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCategory"
+            android:text="@string/expenseCategory"
+            android:textSize="15sp"
+            android:layout_marginTop="5sp"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerCategory"
+            android:entries="@array/expenseCategoryArray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewAmount"
+            android:text="@string/expenseAmount"
+            android:textSize="15sp"
+            android:layout_marginTop="5sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextAmount" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDate"
+            android:text="@string/expenseDate"
+            android:textSize="15sp"
+            android:layout_marginTop="5sp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editTextAddDate"
+                android:hint="mm/dd/yyyy" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonSelectDate"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/ic_date_range_black_18dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewReceipt"
+            android:text="@string/expenseReceipt"
+            android:textSize="15sp"
+            android:layout_marginTop="5sp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/imageButtonReceipt"
+            android:src="@drawable/receipt_scan1"
+            android:onClick="photoPicker">
+
+        </ImageButton>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAddExpense"
+            android:gravity="center"
+            android:text="@string/addExpense"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>
